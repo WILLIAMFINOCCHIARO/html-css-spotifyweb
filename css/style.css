@@ -7,13 +7,93 @@
 /* settings layout */
 
 
+header {
+  height: 80px;
+}
+
+header nav {
+  width: 15vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index:2;
+}
+
+main .containermain {
+  margin: top 10px;
+  margin-left: 18vw;
+  margin-right: auto;
+}
+
+main .row .songs {
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  height: 100px;
+  position: relative;
+  z-index: 2;
+}
 
 /* //settings layout */
 
 
+/* header */
+header {
+  position: relative;
+  z-index: 1;
+}
+
+
+header .butt  {
+  text-align: right;
+  line-height: 80px;
+}
+
+header button {
+  display: inline-block;
+  color: white;
+  background-color: #080b12;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 5px;
+
+}
+
+/* /header */
+
+
+
 
 /* debug */
+.debug header {
+  background-color: #080b12;
+}
 
+.debug .navup {
+  background-color: maroon;
+  height: 30px;
+}
+
+
+.debug nav {
+  background-color: indigo;
+}
+
+
+.debug .songs {
+  background-color: orange;
+  border: 1px solid black;
+}
+
+
+.debug footer {
+  background-color: green;
+}
 
 
 /* //debug */
