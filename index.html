@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify</title>
+  <!-- connessione font Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,900&display=swap" rel="stylesheet"> 
   <!-- libreria font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- connessione css  -->
@@ -65,51 +69,80 @@
       <div class="navup">
         <div class="contenitor">
           <ul>
-            <li>in evidenza</li>
-            <li>podcast</li>
-            <li>classifiche</li>
-            <li>generi e mood</li>
-            <li>nuove uscite</li>
-            <li>scopri</li>
+            <li><a href="">in evidenza</a></li>
+            <li><a href="">podcast</a></li>
+            <li><a href="">classifiche</a></li>
+            <li><a href="">generi e mood</a></li>
+            <li><a href="">nuove uscite</a></li>
+            <li><a href="">scopri</a></li>
           </ul>
         </div>
 
       </div>
       <!-- prima sezione -->
-      <section class="row">
+      <section class="row first">
         <h2>Recently played</h2>
         <div class="flex">
-          <div class="songs"><h1>Heavy Metal</h1><p>Subtitle</p></div>
-          <div class="songs"><h1>Stranger Things Vol.1 (a Netflix Original series soundtrack)</h1>
-            <p>Subtitle</p>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Heavy Metal</h1><p>Subtitle</p></div>
           </div>
-          <div class="songs"><h1>A quiet place</h1><p>Subtitle</p></div>
-          <div class="songs"><h1>Split</h1><p>Subtitle</p></div>
-          <div class="songs"><h1>A cure for Wellness</h1><p>Subtitle</p></div>
-          <div class="songs"><h1>Sinister</h1><p>Subtitle</p></div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Stranger Things Vol.1 (a Netflix Original series soundtrack)</h1><p>Kyle Dixon & Michael Stein</p></div>
+          </div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>a quiet place</h1><p>Subtitle</p></div>
+          </div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Split</h1><p>Subtitle</p></div>
+          </div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>A cure for wellness</h1><p>Subtitle</p></div>
+          </div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Sinister</h1><p>Subtitle</p></div>
+          </div>
+            
         </div>
       </section>
       <!-- //prima sezione -->
 
       <!-- seconda sezione -->
-      <section class="row">
-        <h2>Recently played</h2>
-        <h4>Più ascolti,più saranno accurati i tuoi suggerimenti</h4>
+      <section class="row second">
+        <h2>Creato per John Doe</h2>
+        <h4>Più ascolti, più saranno accurati i tuoi suggerimenti.</h4>
         <div class="flex">
-          <div class="songs"><h1>Release Radar</h1><p>Subtitle</p></div>
-          <div class="songs"><h1>Daily Mix 1</h1><p>Subtitle</p></div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Release Radar</h1><p>Subtitle</p></div>
+          </div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Daily Mix 1</h1></div>
+          </div>
         </div>
       </section>
       <!-- //seconda sezione -->
 
 
       <!-- terza sezione -->
-      <section class="row">
-        <h2>Recently played</h2>
-        <h4>Più ascolti,più saranno accurati i tuoi suggerimenti</h4>
+      <section class="row third">
+        <h2>Artisti più popolari</h2>
+        <h4>Più ascolti, più saranno accurati i tuoi suggerimenti.</h4>
         <div class="flex">
-          <div class="songs"><h1>Release Radar</h1></div>
-          <div class="songs"><h1>Release Radar</h1></div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Heavy Metal</h1><p>Subtitle</p></div>
+          </div>
+          <div class="block">
+            <div class="songs"></div>
+            <div class="text"><h1>Heavy Metal</h1><p>Subtitle</p></div>
+          </div>
         </div>
       </section>
       <!-- //terza sezione -->
@@ -120,6 +153,17 @@
 
     <!-- start footer -->
   <footer>
+    <div class="bar left">
+      <div class="imagesmall"> </div>
+      <div class="sinister">
+        <h2>Sinister</h2>
+        <span>Brano Nome</span>
+      </div>
+    </div>
+    <div class="bar central"></div>
+    <div class="bar right">
+
+    </div>
 
   </footer>
   <!-- //footer -->

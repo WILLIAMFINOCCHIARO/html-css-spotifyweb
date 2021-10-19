@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 /* settings layout */
 
 
@@ -14,7 +16,7 @@ header {
 header nav {
   width: 15vw;
   /* da vedere */
-  height: 100vh; 
+  height: 200vh; 
   position: absolute;
   top: 0;
   z-index:2;
@@ -33,15 +35,42 @@ main .containermain {
   margin-right: auto;
 }
 
-main .row .songs {
+main .row .block {
   width: 200px;
   height: 300px;
 }
 
+main .row .block .songs {
+  width: 100%;
+  height: 60%;
+}
+
+main .row .block .text {
+  width: 100%;
+  height: 40%;
+}
+
 footer {
-  height: 100px;
+  height: 120px;
   position: relative;
   z-index: 2;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .bar {
+  flex-basis: 15vw;
+  height: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+footer .bar.central {
+  flex-basis: 50vw;
 }
 
 /* //settings layout */
@@ -153,16 +182,18 @@ main .navup {
   padding-bottom: 20px;
 }
 
-main .navup ul li {
+main .contenitor ul li   {
   display: inline-block;
   list-style: none;
   text-transform: uppercase;
-  color: #75777c;
   font-weight: 700;
   margin:10px 15px;
 }
 
-
+main .contenitor ul li a  {
+  text-decoration: none;
+  color: #75777c;
+}
 /* //navup */
 
 /* sezioni con immagini */
@@ -186,26 +217,105 @@ main .flex {
   margin:20px 0px;
 }
 
-main .flex .songs {
-  text-align: center;
+main .flex .block {
   margin-right: 5px;
 }
 
-main .flex h1 {
+main .flex .block .text h1 {
   color:white;
   font-size: 20px;
   font-weight: 800;
+  margin-bottom: 5px;
 }
 
-main .flex .songs p {
+main .flex .block .text p {
   color: gray;
   font-weight: 500;
 }
+
+main .flex .block .text {
+  background-color: #141922;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  
+}
+
+/* images on main  */
+
+/* first row */
+main .first .flex :nth-child(1) .songs {
+  background-image: url(../img/metal_lifting.jpg);
+  background-size: 100% 100%;
+}
+main .first .flex :nth-child(2) .songs {
+  background-image: url(../img/stranger.jpeg);
+  background-size: 100% 100%;
+}
+main .first .flex :nth-child(3) .songs {
+  background-image: url(../img/aquietplace.jpeg);
+  background-size: 100% 100%;
+}
+main .first .flex :nth-child(4) .songs {
+  background-image: url(../img/split.jpeg);
+  background-size: 100% 100%;
+}
+main .first .flex :nth-child(5) .songs {
+  background-image: url(../img/cure.jpeg);
+  background-size: 100% 100%;
+}
+main .first .flex :nth-child(6) .songs {
+  background-image: url(../img/sinister.jpeg);
+  background-size: 100% 100%;
+}
+
+/* second row */
+main .second .flex :nth-child(1) .songs {
+  background-image: url(../img/radar.jpeg);
+  background-size: 100% 100%;
+}
+main .second .flex :nth-child(2) .songs {
+  background-image: url(../img/mixdaily.jpeg);
+  background-size: 100% 100%;
+}
+
+/* third row */
+main .third .flex :nth-child(1) .songs {
+  background-image: url(../img/metal_lifting.jpg);
+  background-size: 100% 100%;
+}
+main .third .flex :nth-child(2) .songs {
+  background-image: url(../img/einaudi.jpeg);
+  background-size: 100% 100%;
+}
+
+
+
+/* // images on main */
+
 
 /* //sezioni con immagini */
 
 
 /* //main */
+
+/* footer */
+footer {
+  background-color:#282828;
+}
+
+footer .barleft .imagesmall {
+  background-image: url(../img/sinister.jpeg);
+}
+
+footer .barleft .imagesmall,
+footer .barleft .sinister {
+  width: 30%;
+  height: 30%;
+}
+
+/* //footer */
 
 
 
@@ -226,16 +336,18 @@ main .flex .songs p {
 
 
 
-
-.debug .songs {
+/* 
+.debug .block {
   background-color: orange;
   border: 1px solid black;
-}
+} */
 
 
-.debug footer {
+/* .debug footer {
   background-color: green;
+} */
+
+.debug footer .bar {
+  background-color: orange;
 }
-
-
 /* //debug */
