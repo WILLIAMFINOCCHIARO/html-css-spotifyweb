@@ -35,7 +35,7 @@ main .containermain {
 
 main .row .songs {
   width: 200px;
-  height: 200px;
+  height: 300px;
 }
 
 footer {
@@ -188,6 +188,11 @@ main .flex {
 
 main .flex .songs {
   margin-right: 5px;
+}
+
+main .flex h1 {
+  color:white;
+  font-weight: 800;
 }
 
 
