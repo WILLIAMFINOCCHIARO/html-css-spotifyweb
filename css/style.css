@@ -282,7 +282,7 @@ main .second .flex :nth-child(2) .songs {
 
 /* third row */
 main .third .flex :nth-child(1) .songs {
-  background-image: url(../img/metal_lifting.jpg);
+  background-image: url(../img/youg.jpeg);
   background-size: 100% 100%;
 }
 main .third .flex :nth-child(2) .songs {
@@ -305,16 +305,63 @@ footer {
   background-color:#282828;
 }
 
-footer .barleft .imagesmall {
+footer .bar.left .imagesmall {
   background-image: url(../img/sinister.jpeg);
+  background-size: 100% 100%;
 }
 
-footer .barleft .imagesmall,
-footer .barleft .sinister {
-  width: 30%;
-  height: 30%;
+footer .bar.left .imagesmall,
+footer .bar.left .sinister,
+footer .bar.left .simbol {
+  width: 40%;
+  height: 40%;
 }
 
+
+footer .bar.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .bar.left .sinister {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+footer .bar.left .sinister h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer .bar.left .sinister p {
+  color: gray;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+footer .bar.left .simbol {
+  font-size: 20px;
+  margin:0 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+footer .bar.left .simbol i {
+  color: #818181;
+  margin:0 5px;
+}
 /* //footer */
 
 
