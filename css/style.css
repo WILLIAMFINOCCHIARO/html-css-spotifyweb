@@ -24,7 +24,7 @@ header nav {
 
 nav .contenitornav {
   width: 70%;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: auto;
   margin-top: 15px;
 }
@@ -124,9 +124,14 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  color: #a3a3a3;
   line-height: 35px;
   font-weight: 600;
+}
+
+nav ul li a,
+nav ul li i {
+  text-decoration: none;
+  color: #a3a3a3;
 }
 
 nav ul i {
