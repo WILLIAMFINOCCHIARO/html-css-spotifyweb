@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify</title>
+  <!-- libreria font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- connessione css  -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,10 +18,43 @@
     </div>
     <!-- nav laterale -->
     <nav>
+      <div class="contenitornav">
 
+        <div class="logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+        <div class="firstlist">
+          <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-search"></i> Cerca</li>
+            <li><i class="fas fa-book-open"></i> La tua libreria</li>
+          </ul>
+        </div>
+        <div class="secondlist">
+          <ul>
+            <h2>PLAYLIST</h2>
+            <li> <i class="fas fa-plus-square"></i> Crea Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+          </ul>
+        </div>
+        <div class="textfin">
+          Installa app
+          <hr>
+          <i class="far fa-user-circle"></i> 
+          John Doe
+        </div>
+        
+      </div>
+
+
+      
     </nav>
-    
-
   </header>
    <!-- //header -->
 
@@ -44,13 +79,14 @@
       
       <section class="row">
         <h2>Recently played</h2>
-
-        <div class="songs"></div>
-        <div class="songs"></div>
-        <div class="songs"></div>
-        <div class="songs"></div>
-        <div class="songs"></div>
-        <div class="songs"></div>
+        <div class="flex">
+          <div class="songs"></div>
+          <div class="songs"></div>
+          <div class="songs"></div>
+          <div class="songs"></div>
+          <div class="songs"></div>
+          <div class="songs"></div>
+        </div>
 
       </section>
       <!-- //prima sezione -->
@@ -59,10 +95,11 @@
       <section class="row">
         <h2>Recently played</h2>
         <h4>Più ascolti,più saranno accurati i tuoi suggerimenti</h4>
+        <div class="flex">
+          <div class="songs"></div>
+          <div class="songs"></div>
 
-        <div class="songs"></div>
-        <div class="songs"></div>
-
+        </div>
       </section>
       <!-- //seconda sezione -->
 
@@ -71,9 +108,11 @@
       <section class="row">
         <h2>Recently played</h2>
         <h4>Più ascolti,più saranno accurati i tuoi suggerimenti</h4>
-        <div class="songs"></div>
-        <div class="songs"></div>
-
+        <div class="flex">
+          <div class="songs"></div>
+          <div class="songs"></div>
+        </div>
+      
       </section>
       <!-- //terza sezione -->
     </div>
