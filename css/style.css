@@ -187,14 +187,20 @@ main .flex {
 }
 
 main .flex .songs {
+  text-align: center;
   margin-right: 5px;
 }
 
 main .flex h1 {
   color:white;
+  font-size: 20px;
   font-weight: 800;
 }
 
+main .flex .songs p {
+  color: gray;
+  font-weight: 500;
+}
 
 /* //sezioni con immagini */
 
