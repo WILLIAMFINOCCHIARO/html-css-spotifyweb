@@ -86,19 +86,20 @@ header {
 header .butt  {
   text-align: right;
   line-height: 80px;
+  margin-right: 8px;
 }
 
-header button {
-  display: inline-block;
+
+header .butt  a {
   color: white;
   background-color: #080b12;
+  text-decoration: none;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
   padding: 10px 20px;
+  border:2px solid white;
   border-radius: 20px;
-  margin-right: 5px;
-
 }
 
 /* //bottone header */
