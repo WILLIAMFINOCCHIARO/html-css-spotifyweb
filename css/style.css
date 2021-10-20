@@ -128,8 +128,7 @@ nav ul li {
   font-weight: 600;
 }
 
-nav ul li a,
-nav ul li i {
+nav ul li a {
   text-decoration: none;
   color: #a3a3a3;
 }
@@ -151,13 +150,12 @@ nav .contenitornav .secondlist ul a:hover {
 nav .contenitornav .firstlist li:hover,
 nav .contenitornav .secondlist  li:hover {
   margin-left: -20px;
+  padding-left: 20px;
   border-left: 3px solid lawngreen;
 }
 
-nav .contenitornav .firstlist li:hover,
-nav .contenitornav .secondlist  li:hover {
-  padding-left: 20px;
-}
+
+
 
 /* titolo della secondlist */
 nav .secondlist h2 {
@@ -175,9 +173,13 @@ nav .textfin {
   left: auto;
 }
 
+nav .textfin span {
+  font-weight: bold;
+}
+
 nav hr {
   margin:10px 0;
-  width: 13vw;
+  width: 12vw;
 }
 
 
@@ -203,9 +205,15 @@ main .navup {
   padding-bottom: 20px;
 }
 
-main .containermain .navup .contenitor ul li a:hover {
-  border-width:thin;
-  border-bottom: 2px solid lawngreen;
+main .navup .contenitor ul li a .border {
+  width: 50%;
+  margin:0 auto;
+  height:2px;
+  border-bottom:none;
+}
+
+main .navup .contenitor ul li a .border:hover {
+  border-bottom:2px solid lawngreen;
 }
 
 main .contenitor ul li   {
