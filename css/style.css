@@ -4,7 +4,11 @@
   box-sizing: border-box;
 }
 
-
+body {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* settings layout */
 
@@ -15,11 +19,8 @@ header {
 
 header nav {
   width: 15vw;
-  /* da vedere */
   height: 200vh; 
-  position: absolute;
-  top: 0;
-  z-index:2;
+  float: left;
 }
 
 nav .contenitornav {
@@ -31,7 +32,7 @@ nav .contenitornav {
 
 main .containermain {
   margin: top 10px;
-  margin-left: 16vw;
+  margin-left: 20vw;
   margin-right: auto;
 }
 
@@ -77,8 +78,6 @@ footer .bar.central {
 
 /* header */
 header {
-  position: relative;
-  z-index: 1;
   background-color: #080b12;
 }
 
@@ -155,8 +154,6 @@ nav .contenitornav .secondlist  li:hover {
 }
 
 
-
-
 /* titolo della secondlist */
 nav .secondlist h2 {
   font-size: 15px;
@@ -168,9 +165,6 @@ nav .secondlist h2 {
 /* parte finale della nav */
 nav .textfin {
   color: white;
-  position: relative;
-  top: 200px;
-  left: auto;
 }
 
 nav .textfin span {
@@ -193,6 +187,7 @@ nav hr {
 /* main */
 
 main {
+  height: calc(100% - 200px);
   background-color: #141922;
 }
 
