@@ -63,7 +63,7 @@ footer {
 }
 
 footer .bar {
-  flex-basis: 15vw;
+  flex-basis: 20vw;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -337,7 +337,6 @@ footer .bar.left .sinister {
   font-size: 10px;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -377,20 +376,98 @@ footer .bar.left .simbol i {
 /* barright */
 
 footer .bar.right {
-  text-align: center;
-  line-height:120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 
 footer .bar.right i {
+  color: white;
+  margin:0 10px;
+}
+
+footer .bar.right .grayright {
+  width: 70%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #5a5a5a;
   margin:0 10px;
 }
 
 
-
+footer .bar.right .grayright .whitebar {
+  width: 20%;
+  height: 100%;
+  background-color: #c1c1c1;
+  border-radius: 20px;
+}
 
 
 /* //barright */
+
+/* barcentral */
+footer .bar.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .bar.central .play {
+  display: flex;
+  align-items: center;
+}
+
+footer .bar.central .barplay {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+footer .bar.central .play {
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+footer .bar.central .play :nth-of-type(3)  {
+  font-size: 35px;
+  margin:0 20px;
+}
+footer .bar.central .play :nth-child(2n)  {
+  margin:0 20px;
+}
+
+footer .bar.central .barplay span {
+  color: white;
+  font-weight: 600;
+  margin:0 50px;
+}
+
+footer .bar.central .barplay  {
+  width: 100%;
+}
+
+footer .bar.central .grigio {
+  width: 80%;
+  height: 5px;
+  border-radius: 20px;
+  background-color: #5a5a5a;
+  margin:0 10px;
+}
+
+
+footer .bar.central .grigio .whitebar {
+  width: 20%;
+  height: 100%;
+  background-color: #c1c1c1;
+  border-radius: 20px;
+}
+
+/* //barcentral */
+
+
 /* //footer */
 
 
@@ -423,7 +500,7 @@ footer .bar.right i {
   background-color: green;
 } */
 
-.debug footer .bar {
+/* .debug footer .bar {
   background-color: orange;
-}
+} */
 /* //debug */
