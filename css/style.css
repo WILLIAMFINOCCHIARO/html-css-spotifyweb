@@ -134,13 +134,29 @@ nav ul li i {
   color: #a3a3a3;
 }
 
-nav ul i {
+nav ul a i {
   font-size: 25px;
   margin-right: 5px;
 }
 
-nav .secondlist ul li i {
+nav .secondlist ul li a i {
   font-size: 40px;
+}
+
+nav .contenitornav .firstlist ul a:hover,
+nav .contenitornav .secondlist ul a:hover {
+  color:white;
+}
+
+nav .contenitornav .firstlist li:hover,
+nav .contenitornav .secondlist  li:hover {
+  margin-left: -20px;
+  border-left: 3px solid lawngreen;
+}
+
+nav .contenitornav .firstlist li:hover,
+nav .contenitornav .secondlist  li:hover {
+  padding-left: 20px;
 }
 
 /* titolo della secondlist */
@@ -185,6 +201,11 @@ main .navup {
   text-align: center;
   background-color: #141922;
   padding-bottom: 20px;
+}
+
+main .containermain .navup .contenitor ul li a:hover {
+  border-width:thin;
+  border-bottom: 2px solid lawngreen;
 }
 
 main .contenitor ul li   {
