@@ -159,7 +159,11 @@ nav .secondlist h2 {
 /* parte finale della nav */
 nav .textfin {
   color: white;
-  padding-top: 108vh;
+  padding-top: calc(108vh - 10px);
+}
+
+nav .textfin i {
+  font-size: 25px;
 }
 
 nav .textfin span {
@@ -523,3 +527,22 @@ footer .bar.central .grigio .whitebar {
   background-color: orange;
 } */
 /* //debug */
+
+
+
+
+@media screen and (max-width:768px) {
+
+  nav .contenitornav {
+    width: 20%;
+  }
+
+  nav .logo img {
+    height: 25px;
+  }
+
+  footer .bar {
+    width: 30%;
+  }
+
+}
