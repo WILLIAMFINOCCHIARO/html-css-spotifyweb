@@ -23,9 +23,8 @@ header {
 nav {
   background-color: #000000;
   width: 15%;
-  height: calc(100% - 120px); 
+  min-height: 480px;
   float: left;
-  position: relative;
 }
 
 nav .contenitornav {
@@ -33,6 +32,7 @@ nav .contenitornav {
   margin-left: 20px;
   margin-right: auto;
   margin-top: 15px;
+  
 }
 
 
@@ -159,10 +159,7 @@ nav .secondlist h2 {
 /* parte finale della nav */
 nav .textfin {
   color: white;
-  position: absolute;
-  bottom: 0;
-  left:20px;
-  
+  padding-top: 108vh;
 }
 
 nav .textfin span {
@@ -202,18 +199,18 @@ main .navup {
   padding-bottom: 20px;
 }
 
-main .navup .contenitor ul li a .border {
+main .navup  ul li a .border {
   width: 50%;
   margin:0 auto;
   height:2px;
   border-bottom:none;
 }
 
-main .navup .contenitor ul li a .border:hover {
+main .navup ul li a .border:hover {
   border-bottom:2px solid lawngreen;
 }
 
-main .contenitor ul li   {
+main .navup ul li   {
   display: inline-block;
   list-style: none;
   text-transform: uppercase;
@@ -221,7 +218,7 @@ main .contenitor ul li   {
   margin:10px 15px;
 }
 
-main .contenitor ul li a  {
+main .navup ul li a  {
   text-decoration: none;
   color: #75777c;
 }
@@ -245,7 +242,7 @@ main .flex {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin:20px 0px;
+  margin:50px 0px;
 }
 
 main .flex .block {
